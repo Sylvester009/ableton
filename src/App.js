@@ -7,6 +7,7 @@ import photo9 from "./photo-9.jpg";
 import photo6 from "./photo-6-a.jpg";
 import photo7 from "./photo-7.jpg";
 import photo8 from "./photo-8.jpg";
+import Hero from "./components/Hero";
 import About1 from "./components/About1";
 import About2 from "./components/About2";
 import About3 from "./components/About3";
@@ -14,11 +15,16 @@ import About4 from "./components/About4";
 import About5 from "./components/About5";
 import About6 from "./components/About6";
 import Footer from "./components/Footer";
+import Header from "./Header.avif";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+    <Hero heading-photo ={Header} />
+    <div className="header">
+      <img src={Header} className="header-photo" />
+    </div>
       <About1 />
       <div className="collage">
         <div className="collage-background"></div>
